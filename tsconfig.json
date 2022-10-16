@@ -3,34 +3,64 @@
     "target": "ES2018",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
-    ],
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
+
+    "noImplicitAny": false,
+
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     },
     "types": [
       "@nuxt/types",
-      "@types/node"
+      "@types/node",
+      "vue-apollo/types",
+      "@nuxtjs/auth-next"
     ]
   },
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ]
+  "exclude": ["node_modules", ".nuxt", "dist"]
 }
+
+// {
+//   "compilerOptions": {
+//     "target": "ES2018",
+//     "module": "ESNext",
+//     "moduleResolution": "Node",
+//     "lib": [
+//       "ESNext",
+//       "ESNext.AsyncIterable",
+//       "DOM"
+//     ],
+//     "esModuleInterop": true,
+//     "allowJs": true,
+//     "sourceMap": true,
+//     "strict": true,
+//     "noEmit": true,
+//     "experimentalDecorators": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "~/*": [
+//         "./*"
+//       ],
+//       "@/*": [
+//         "./*"
+//       ]
+//     },
+//     "types": [
+//       "@nuxt/types",
+//       "@types/node"
+//     ]
+//   },
+//   "exclude": [
+//     "node_modules",
+//     ".nuxt",
+//     "dist"
+//   ]
+// }
