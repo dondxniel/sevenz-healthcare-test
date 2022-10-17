@@ -16,7 +16,7 @@ yarn dev
 to run the project. 
 
 ## UNDERSTANDING THE PROJECT'S FOLDER STRUCTURE
-The project's components system follows the atomic design structure which focuses on creating design systems, not just a bunch of pages. The folders of interest are listed below: 
+The project's components system follows the atomic design structure which focuses on creating design systems, not just a bunch of pages. The idea is that there are different types of components; atoms, molecules, organisms, templates and pages. These types of pages are described by the level of complexity they contain. Atoms are the simplest form a component can take, molecules are a little bit more complex, organisms are more complex than molecules and the complexity grows as you go down the list. The folders of interest are listed below: 
 
 * `components`
 * `constants`
